@@ -21,10 +21,10 @@ tar -xvzf latest.tar.gz
 mv wordpress/* var/www/mysite
 # donner tout les acces a wordpress sur site / ce connecter par ex. a une base de donner
 mv wp-config.php var/www/mysite 
-wget https://files.phpmyadmin.net/phpMyAdmin/4.9.0.1/phpMyAdmin-4.9.0.1-english.tar.gz
-tar xvf phpMyAdmin-4.9.0.1-english.tar.gz
+wget https://files.phpmyadmin.net/phpMyAdmin/5.0.0/phpMyAdmin-5.0.0-english.tar.gz
+tar xvf phpMyAdmin-5.0.0-english.tar.gz
 mkdir /var/www/mysite/phpmyadmin
-mv phpMyAdmin-4.9.0.1-english/* /var/www/mysite/phpmyadmin/
+mv phpMyAdmin-5.0.0-english/* /var/www/mysite/phpmyadmin/
 mv start.sql /var/www/
 service mysql start
 mysql < /var/www/start.sql
